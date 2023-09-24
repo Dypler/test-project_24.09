@@ -1,0 +1,179 @@
+@import 'normalize.css';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/client';
+@import 'blocks/footer';
+@import 'blocks/what';
+@import 'blocks/work';
+@import 'blocks/modal';
+@import 'blocks/popup';
+
+@font-face {
+  font-family: 'Galien';
+  src: url('./fonts/Galien-Bold.ttf') format('truetype');
+
+  /* Другие стили шрифта... */
+}
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('./fonts/Gilroy-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('./fonts/Gilroy-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url('./fonts/Gilroy-Semibold.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  --color-white: #ffffff;
+  --color-first: #1F3F68;
+  --color-second: #316099;
+  --color-btn: #5A98D0;
+  --color-btn-hover: #F1CE73;
+  --color-btn-click:#376D8B;
+}
+body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+button {
+        background-color: var(--color-btn);
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border-radius: 10px;
+        border: none;
+        width: 220px;
+        height: 56px;
+        font-family: Gilroy-Regular;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--color-white);
+        cursor: pointer;
+        &:hover {
+          background-color: var(--color-btn-hover);
+        }
+        &:active {
+          background-color: var(--color-btn-click);
+        }
+}
+h1 {
+  margin: 0;
+  color: var(--color-first);
+  font-family: Galien;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 74px; /* 115.625% */
+  letter-spacing: 2.56px;
+}
+h2 {
+  font-family: Gilroy-Semibold;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px; /* 127.778% */
+  letter-spacing: 1.8px;
+}
+h3 {
+  font-family: Gilroy-Semibold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 1px;
+}
+.blue {
+  color: var(--color-first);
+}
+.blue__second {
+  color: var(--color-second);
+}
+.white {
+  color: var(--color-white);
+}
+.title {
+  font-family: Gilroy-Semibold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 1px;
+}
+.subtitle {
+  opacity: 0.6;
+  color: var(--color-first);
+  font-family: Gilroy-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.8px;
+  &__white {
+    opacity: 0.6;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.8px;
+    color:var(--color-white);
+  }
+}
+
+@media (max-width: 922px) {
+
+}
+@media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+      font-style: normal;
+      line-height: 40px; /* 115.625% */
+      letter-spacing: 1px;
+  }
+    h2 {
+      font-size: 30px;
+      line-height: 37px; /* 127.778% */
+
+    }
+}
+@media (max-width: 576px) { 
+  h2 {
+    font-size: 28px;
+  }
+}
