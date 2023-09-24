@@ -31,10 +31,10 @@
     bottom: 0;
     content: "";
     display: block;
-    height: 5px;
+    height: 1px;
     opacity: .4;
     position: absolute;
-    right: 80px;
+    right: 0;
     width: 100vw;
 
 }
@@ -52,8 +52,7 @@
         width: 100%;
     }
     .work:after {
-        transform: translate(-36%, 50%);
-
+        right: 30%;
     }
 }
 
