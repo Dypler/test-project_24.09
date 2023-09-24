@@ -67,6 +67,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
                     modal.close();
                     // Отображаем попап с успешной отправкой
                     successPopup.style.display = "grid";
+                    
                     document.getElementById("fullName").value = "";
                     document.getElementById("email").value = "";
                     document.getElementById("message").value = "";

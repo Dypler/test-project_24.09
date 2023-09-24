@@ -33,3 +33,6 @@
     margin-top: 10px;
     cursor: pointer;
 }
+body.modal-open {
+    overflow: hidden;
+}
